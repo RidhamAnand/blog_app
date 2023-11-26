@@ -55,7 +55,7 @@ export const Full_Blog = () => {
                         }
                     }
     
-                    const response = await axios.post("http://localhost:8080/addcomment", data, config);
+                    const response = await axios.post("https://mern-stack-blog-web-app.vercel.app/addcomment", data, config);
                     setSnackBarType("success")
                     setOpen(true);
                     setSnackBarMessage("Comment Posted Successfully")
@@ -88,7 +88,7 @@ export const Full_Blog = () => {
         
 
         const getFullBlog = async () => {
-            const route = `http://localhost:8080/blog/${id}`;
+            const route = `https://mern-stack-blog-web-app.vercel.app/blog/${id}`;
             try {
                 const config = {
                     headers: {
@@ -119,7 +119,7 @@ export const Full_Blog = () => {
                 }
 
               
-               const response =await axios.post("http://localhost:8080/fetchComments", data, config)
+               const response =await axios.post("https://mern-stack-blog-web-app.vercel.app/fetchComments", data, config)
                 const fetchedComments = response.data.data;
                 setAllComments(fetchedComments);
                
