@@ -7,7 +7,7 @@ const cors = require("cors");
 const fileUpload = require("express-fileupload");
 app.use(cors(   
     {
-        origin: ['https://deploy-mern-1whq.vercel.app'],
+        origin: ['https://mern-stack-blog-web-app-sbhu-8ib5xrzmn-ridhamanands-projects.vercel.app/'],
         methods: ['POST','GET'],
         credentials: true
 
