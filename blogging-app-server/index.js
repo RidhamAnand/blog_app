@@ -5,14 +5,14 @@ const route = require("./routes/routes")
 const connection = require("./database/db")
 const cors = require("cors");
 const fileUpload = require("express-fileupload");
-// app.use(cors(   
-//     {
-//         origin: ['https://deploy-mern-1whq.vercel.app'],
-//         methods: ['POST','GET'],
-//         credentials: true
+app.use(cors(   
+    {
+        origin: ['https://deploy-mern-1whq.vercel.app'],
+        methods: ['POST','GET'],
+        credentials: true
 
-//     }
-// ));
+    }
+));
 
 
 
