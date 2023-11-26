@@ -37,7 +37,7 @@ export default function MyPostCard({ post }) {
       id: post._id,
     }
     try {
-      const response = axios.post("http://localhost:8080/delete", data, config)
+      const response = axios.post("https://mern-stack-blog-web-app.vercel.app/delete", data, config)
       console.log(response.data.msg);
       window.location.reload(false)
 
