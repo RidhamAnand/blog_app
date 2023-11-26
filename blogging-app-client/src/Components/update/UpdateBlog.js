@@ -67,7 +67,7 @@ const UpdatePost = (props) => {
 
                 try {
 
-                    const response = await axios.post("http://localhost:8080/file/upload", data);
+                    const response = await axios.post("https://mern-stack-blog-web-app.vercel.app/file/upload", data);
 
                     setIsLoading(false);
                     setUrl(response.data.url);
@@ -115,7 +115,7 @@ const UpdatePost = (props) => {
                 }
             }
 
-            const response = await axios.post("http://localhost:8080/update", post, config)
+            const response = await axios.post("https://mern-stack-blog-web-app.vercel.app/update", post, config)
             setSnackBarType("success");
             setToOpen(true);
             showSnackBar(response.data.msg);
