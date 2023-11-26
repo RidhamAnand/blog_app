@@ -43,7 +43,7 @@ const MyBlogs = () => {
 
 
             try {
-                const response = await axios.post("http://localhost:8080/myBlogs", data, config)
+                const response = await axios.post("https://mern-stack-blog-web-app.vercel.app/myBlogs", data, config)
                 setPosts(response.data.allBlogs);
 
             }
