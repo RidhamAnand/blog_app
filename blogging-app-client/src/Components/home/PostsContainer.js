@@ -23,7 +23,7 @@ export const PostsContainer = (props) => {
 
             console.log(`${data} called from postContainer`);
             try {
-                const response = await axios.post("http://localhost:8080/getPosts", data, config)
+                const response = await axios.post("https://mern-stack-blog-web-app.vercel.app/getPosts", data, config)
                 setPosts(response.data.blogs);
                 setLoading(false)
             }
